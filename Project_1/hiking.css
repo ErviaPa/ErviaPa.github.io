@@ -1,0 +1,18 @@
+.box {
+    width: 435px;
+    height: 295px;
+    padding: 10px;
+    background-color: rgb(255, 251, 240);
+    border: 2px solid rgb(9, 9, 10);
+    position: relative;
+}
+
+.box::after {
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    right: 4px;
+    bottom: 4px;
+    border: 2px solid rgb(255, 0, 0); 
+}
