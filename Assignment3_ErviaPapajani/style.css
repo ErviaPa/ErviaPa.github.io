@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('newyork.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .overlay {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    color: #fff;
+  }
+  
+  .overlay p {
+    margin: 0;
+    line-height: 1.5;
+  }
+  
+  .overlay a {
+    color: #fff;
+    text-decoration: underline;
+  }
+  
+  .overlay button {
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    cursor: pointer;
+    margin-left: 300px;
+  }
+
