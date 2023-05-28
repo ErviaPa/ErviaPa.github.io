@@ -1,0 +1,253 @@
+.main,
+.productContainer,
+.indexNavigationContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.indexNavigationContainer {
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.indexNavigationContainer a:first-of-type {
+    margin-top: 90px;
+    margin-bottom: 50px;
+}
+
+.indexNavigationContainer h1 {
+    top: 0;
+    margin: 0;
+    position: absolute;
+    width: 100%;
+    padding: 20px;
+    color: rgb(9, 1, 1);
+    text-align: center;
+}
+
+.indexNavigation {
+    font-size: x-large;
+    text-decoration: none;
+    border: 1px solid rgb(191, 7, 7);
+    border-radius: 8px;
+    padding: 10px;
+    background-color: antiquewhite;
+}
+
+.indexNavigation:visited,
+.indexNavigation:link {
+    color: rgb(244, 6, 6);
+}
+
+.indexNavigation:hover {
+    font-size: xx-large;
+    color: rgb(110, 10, 156);
+    background-color: rgb(235, 13, 238);
+}
+
+.productContainer {
+    flex-direction: column;
+    border: 2px solid rgb(240, 99, 28);
+    font-size: small;
+    padding: 100px;
+    text-align: center;
+   
+
+}
+
+.product {
+    width: 300px;
+    height: auto;
+}
+
+.productLarger {
+    width: 300px;
+}
+
+.productContainer div button {
+    border: 0;
+    background-color: orange;
+    border-radius: 8px;
+    color: white;
+    padding: 10px 10px;
+    cursor: pointer;
+    
+}
+
+.spacer {
+    margin: 30px;
+}
+
+.spacerBottom {
+    margin-bottom: 30px;
+}
+
+.modal {
+    opacity: 0;
+    pointer-events: none;
+    background-color: rgba(0, 51, 117, 0.72);
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.modalSecond {
+    background-color: rgba(68, 117, 0, 0.68);
+}
+
+.modalContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+
+.modalContent {
+    position: relative;
+    background-color: orange;
+    color: white;
+}
+
+.modalContentSecond {
+    background-color: #aed8e6;
+}
+
+.modalContent h1 {
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    background-color: lightpink;
+}
+
+.modalContent p {
+    color: black;
+    background-color: lightpink;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    width: 95%;
+    margin: auto;
+}
+
+.imageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.close {
+    color: black;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 28px;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: white;
+    font-size: large;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal:target {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.square2 {
+    width: 100%;
+    padding-bottom: 20%;
+    
+}
+
+.square-col {
+    width: 30%;
+    height: 0;
+    padding-top: 30%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin: 0.75%;
+  
+}
+
+.square {
+    width: 100%;
+    padding-bottom: 100%;
+    background-color: #eee;
+}
+
+.bigImage {
+    background-image: url("https://images.pexels.com/photos/850359/pexels-photo-850359.jpeg");
+    background-size: cover;
+    position: relative;
+}
+
+.sq1 {
+    background-image: url("https://images.pexels.com/photos/74512/pexels-photo-74512.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    background-size: cover;
+    position: relative;
+}
+
+.sq2 {
+    background-image: url("https://images.pexels.com/photos/1550618/pexels-photo-1550618.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    background-size: cover;
+    position: relative;
+}
+
+.sq3 {
+    background-image: url("https://images.pexels.com/photos/699963/pexels-photo-699963.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    background-size: cover;
+    position: relative;
+}
+
+.sq4 {
+    background-image: url("https://images.pexels.com/photos/931158/pexels-photo-931158.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    background-size: cover;
+    position: relative;
+}
+
+.sq5 {
+    background-image: url("https://images.pexels.com/photos/1233414/pexels-photo-1233414.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    background-size: cover;
+    position: relative;
+}
+
+.sq6 {
+    background-image: url("https://images.pexels.com/photos/1353126/pexels-photo-1353126.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    background-size: cover;
+    position: relative;
+}
+
+.sq7 {
+    background-image: url("https://images.pexels.com/photos/378006/pexels-photo-378006.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    background-size: cover;
+    position: relative;
+}
+
+.sq8 {
+    background-image: url("https://images.pexels.com/photos/599679/pexels-photo-599679.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    background-size: cover;
+    position: relative;
+}
+
+.sq9 {
+    background-image: url("https://images.pexels.com/photos/3746214/pexels-photo-3746214.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    background-size: cover;
+    position: relative;
+}
