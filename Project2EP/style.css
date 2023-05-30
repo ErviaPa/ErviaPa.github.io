@@ -1,0 +1,583 @@
+body {
+    background-color: #a788b9;
+}
+
+hr {
+    border-top: 1px solid rgb(6, 6, 6);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px;
+    overflow: hidden;
+    margin-bottom: 24px;
+}
+
+.imgLogo {
+    animation: slideInRight 2s linear infinite;
+}
+
+.h1Brand {
+    animation: slideInLeft 4s ease-in-out infinite;
+}
+
+.h4BrandSlogan {
+    animation: slideInBottom 3s ease-in-out infinite;
+}
+
+@keyframes slideInRight {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInBottom {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+header h1 {
+    font-style: italic;
+    color: #07022e;
+}
+
+header div img {
+    width: 100px;
+    border: 2px solid #002280;
+    border-radius: 20px;
+}
+
+header h1,
+header h4 {
+    margin: 0 0;
+}
+
+.headerBrandDescription {
+    margin-left: 25px
+}
+
+.slideShowStage {
+    width: 100%;
+    overflow: hidden;
+}
+
+.slideShowContainer {
+    width: 300%;
+    color: white;
+    height: 100%;
+    animation: slideshow 20s infinite linear;
+
+}
+
+.slide {
+    width: calc(100%/3);
+    height: 100%;
+    float: left;
+    text-align: center;
+}
+
+.firstSlide {
+    background-color: #025781;
+}
+
+.secondSlide {
+    background-color: #0f2e3e;
+}
+
+.thirdSlide {
+    background-color: #b066de;
+    color: black;
+}
+
+.heroImageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+    background-image: url("images/intro_img2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.heroText {
+    background-color: #b4b2b3;
+    width: 30%;
+    left: 5%;
+    position: absolute;
+    border: 3px solid white;
+    padding: 10px;
+}
+
+.oneByTwo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding-bottom: 30px;
+}
+
+.imageWithText {
+    background-image: linear-gradient(45deg, rgba(97, 97, 97, 0.66), rgba(175, 44, 44, 0.33), rgba(97, 97, 97, 0.33), rgba(228, 103, 103, 0.66)), url("images/intro_img1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    filter: brightness(150%);
+    opacity: .9;
+}
+
+p._inside {
+    border: 1px solid #808102;
+    color: white;
+    align-items: center;
+    font-size: 10x;
+    font-family: 'Courier New', Courier, monospace;
+    width: 35%;
+    padding: 20px;
+    text-shadow: 1px 1px 3px black;
+    margin-left: 20px;
+    margin-top: 20px;
+    background-color: rgba(97, 97, 97, 0.15);
+}
+
+._box {
+    width: 45vw;
+    height: 52vh;
+    background-color: rgba(97, 97, 97, 0.20);
+}
+
+._box div:last-child {
+    color: #e7e7dc;
+    align-items: center;
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+._box div {
+    padding: 30px;
+}
+
+.oneByThreeContainer {
+    margin-top: 25px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.productContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.child {
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+.productContainer img {
+    height: 200px;
+}
+
+.productName,
+.productType,
+.modalProductType {
+    font-weight: bold;
+}
+
+.productName {
+    font-size: small;
+    color: white;
+}
+
+.productSize {
+    text-align: center;
+    width: 250px;
+    font-size: smaller;
+}
+
+.btnAddToBag {
+    text-decoration: none;
+    font-size: smaller;
+    color: white;
+    background-color: black;
+    padding: 10px;
+    position: relative;
+    display: inline-block;
+}
+
+.btnAddToBag:hover {
+    background-color: grey;
+}
+
+.btnAddToBag::after {
+    content: 'Add to Shopping Cart';
+    display: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: calc(100%);
+ 
+    background-color: lightgrey;
+    color: black;
+    border: 1px solid lightgray;
+    width: 130px;
+    text-align: center;
+    padding: 10px;
+}
+
+.btnAddToBag:hover::after {
+    display: block;
+}
+
+
+footer {
+    background-color: #232323;
+    height: auto;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.topSection {
+    display: flex;
+    padding-top: 30px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.topSectionColumn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.topSectionColumn p,
+.rightAlignedSection p {
+    font-weight: bold;
+    font-size: small;
+}
+
+.topSectionColumn a {
+    text-decoration: none;
+    color: white;
+    font-weight: lighter;
+    font-size: smaller;
+}
+
+._divider {
+    padding-top: 50px;
+}
+
+.footerHr {
+    border-top: 2px solid white;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.socialMedia img {
+    width: 30px;
+    margin: 10px;
+}
+
+.rightAlignedSection {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-right: 10%;
+}
+
+._bottomCenter {
+    padding-top: 50px;
+    padding-bottom: 5px;
+    font-size: x-small;
+    text-align: center;
+}
+
+@keyframes zoomIn {
+
+    0% {
+        transform: scale(0.1);
+
+    }
+
+    75%,
+    100% {
+        transform: scale(1);
+      
+    }
+}
+
+@keyframes entrance {
+    0% {
+        transform: translateY(-150%);
+      
+    }
+
+    30% {
+        transform: translateY(180%);
+     
+    }
+
+    90%,
+    100% {
+        transform: translateY(0%);
+
+    }
+}
+
+@keyframes entrance2 {
+    0% {
+        transform: translateY(450%);
+
+    }
+
+    30% {
+        transform: translateY(-450%);
+      
+    }
+
+    90%,
+    100% {
+        transform: translateY(0%);
+      
+    }
+}
+
+@keyframes slideshow {
+
+    0%,
+    20% {
+        margin-left: -100%;
+    }
+
+    25%,
+    45% {
+        margin-left: 0%;
+    }
+
+    50%,
+    70% {
+        margin-left: -100%;
+    }
+
+    75%,
+    95% {
+        margin-left: -200%;
+    }
+
+    100% {
+        margin-left: -100%;
+    }
+}
+
+.close {
+    color: black;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 28px;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: lightgray;
+    font-size: large;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.btnContinueShopping,
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal:target {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.modal {
+    opacity: 0;
+    pointer-events: none;
+    background-color: rgba(55, 55, 55, 0.5);
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    transition: opacity 0.3s;
+}
+
+.modalContent {
+    position: relative;
+    background-color: white;
+    color: black;
+    width: 60%;
+    padding: 25px;
+}
+
+.modalContentBottom {
+    width: 60%;
+    background-color: lightgray;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 25px;
+
+}
+
+.modalContentBottom p {
+    text-align: center;
+}
+
+.modalContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+}
+
+.spacerBottom {
+    margin-bottom: 30px;
+}
+
+.modalHR {
+    border: 2px solid lightgray;
+}
+
+.modalHRBottom {
+    border: 2px solid white;
+}
+
+.modalContentContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.modalContentContainer img {
+    height: 250px;
+}
+
+.modalContentContainer .modalText {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.modalProductType {
+    font-size: x-large;
+}
+
+.modalProductPrize {
+    font-size: larger;
+}
+
+.btnContinueShopping {
+
+    background-color: white;
+    padding: 10px;
+}
+
+.giftset {
+    margin-left: 25px;
+}
+
+@media (max-width: 600px) {
+    .slide {
+        font-size: small;
+    }
+
+    .headerBrandDescription {
+        font-size: x-small;
+    }
+
+    .heroText,
+    p._inside,
+    ._box {
+        font-size: smaller;
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    .rightAlignedSection {
+        align-items: center;
+
+    }
+
+
+    ._bottomCenter {
+        padding: 50px;
+    }
+
+    .modalContentContainer {
+        flex-direction: column;
+    }
+
+    .modalContentContainer img {
+        height: 100px;
+    }
+
+    .modalText {
+        text-align: center;
+    }
+
+    .modalText p {
+        margin: 0 0;
+        font-size: medium;
+    }
+
+    .modalText p:not(:last-of-type) {
+        margin-bottom: 10px;
+    }
+
+    .modalContentBottom {
+        font-size: small;
+    }
+
+    .giftset {
+        margin-left: 0;
+    }
+
+
+}
+
+Footer 
+© 2023 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
