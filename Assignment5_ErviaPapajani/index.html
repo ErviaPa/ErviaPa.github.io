@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 5</title>
+    <link rel="stylesheet" href="assignment5.css">
+    <script type="text/javascript" src="assignment5.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>BMI Calculator</h1>
+    </header>
+<div></div>
+
+</body>
+    <div class="bodyMassIndexContainer">
+        
+            <form class="formBMI">
+                <input class="inputTextField" type="text" id="inputHeightLucas"
+                    placeholder="Enter Lucas' Height in m">
+                <br>
+                <input class="inputTextField" type="text" id="inputWeightLucas"
+                    placeholder="Enter Lucas' Weight in kg">
+                <br>
+                <input class="inputTextField" type="text" id="inputHeightPeter"
+                    placeholder="Enter Peter's Height in m">
+                <br>
+                <input class="inputTextField" type="text" id="inputWeightPeter"
+                    placeholder="Enter Peter's Weight in kg ">
+                <br>
+                <input class="formButtons" type="button" id="buttonBMI" value="Calculate BMI" onclick="calculateBMI()">
+                <br>
+                <label id="labelPartAResult"></label>
+                <br>
+                <label id="labelPartCResult"></label>
+            </form>
+    </div>
+<hr>
+    <div class="temperatureConverterContainer">
+        <h2>Temperature Converter</h1>
+            <form class="formTempConversion">
+                <input class="inputTextField" type="text" id="inputTemperatureCelcius"
+                    placeholder="Enter Temperature in Celsius">
+                <br>
+                <input class="formButtons" type="button" id="buttonCelciusTemperature" value="Convert To Fahrenheit"
+                    onclick="ConvertCelsiusToFahrenheit()">
+                <br>
+                <label id="labelCelsiusTemperatureResult"></label>
+
+                <input class="inputTextField" type="text" id="inputTemperatureFahrenheit"
+                    placeholder="Enter Temperature in Fahrenheit">
+                <br>
+                <input class="formButtons" type="button" id="buttonFahrenheitTemperature" value="Convert To Celsius"
+                    onclick="ConvertFahrenheitToCelsius()">
+                <br>
+                <label id="labelFahrenheitTemperatureResult"></label>
+            </form>
+
+    </div>
+    <footer>
+
+    </footer>
+</body>
+
+
+</html>
