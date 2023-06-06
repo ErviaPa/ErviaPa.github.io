@@ -1,0 +1,226 @@
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+body,
+.bottomRowContainer {
+    background-color: #a7e2e3;
+}
+
+.titleAreaContainer h1,
+.titleAreaContainer h3,
+#h4Score,
+.startScreenContainer,
+#midScreenInputText,
+.you_won {
+    text-align: center;
+}
+
+.titleAreaContainer h1,
+.titleAreaContainer h3,
+#h4Score {
+    margin-bottom: 0;
+}
+
+.titleAreaContainer h1 {
+    text-shadow: 1px 0px 1px gainsboro, 0px 1px 1px gainsboro, 2px 1px 1px gainsboro, 1px 2px 1px gainsboro, 3px 2px 1px gainsboro, 2px 3px 1px gainsboro, 4px 3px 1px gainsboro, 3px 4px 1px gainsboro, 5px 4px 1px rgb(201, 199, 199), 4px 5px 1px gainsboro, 6px 5px 1px rgb(198, 196, 196), 5px 6px 1px gainsboro, 7px 6px 1px rgb(199, 198, 198);
+}
+
+.titleAreaContainer h3,
+#h4HighScore {
+    margin-top: 2px;
+}
+
+
+.middleAreaContainer,
+.bottomRowContainer,
+.startScreenContainer {
+    box-shadow: 0px 0px 5px 0px rgba(125, 125, 125, 0.493);
+}
+
+.middleAreaContainer,
+.topRowContainer,
+.leftContainer,
+.rightContainer,
+.midRowContainer,
+.startScreenContainer,
+.bottomRowContainer {
+    display: flex;
+}
+
+.leftContainer,
+.rightContainer,
+.startScreenContainer,
+.bottomRowContainer {
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+    margin-left: 2px;
+}
+
+.middleAreaContainer,
+.leftContainer,
+.midRowContainer,
+.startScreenContainer {
+    flex-direction: column;
+    margin-bottom: 4px;
+}
+
+
+.midRowContainer {
+    width: 85%;
+    align-self: center;
+}
+
+.middleAreaContainer,
+#midScreenInputText {
+    background-color: #edf6e5;
+}
+
+.middleAreaContainer {
+    margin: auto;
+    margin-top: 20px;
+    width: 70%;
+    height: auto;
+}
+
+.middleAreaContainer,
+.leftContainer,
+.rightContainer h4,
+.startScreenContainer,
+#midScreenInputText,
+.bottomRowContainer {
+    border-radius: 15px;
+}
+
+#midScreenCheckButton {
+    border-radius: 10px;
+}
+
+.topRowContainer {
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.leftContainer,
+.topRowContainer .rightContainer h4 {
+    background-color: #ffbcbd;
+}
+
+.leftContainer,
+.rightContainer h4,
+#midScreenCheckButton {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.topRowContainer .h4HighScore {
+    margin-top: 5px;
+}
+
+.leftContainer,
+.rightContainer h4 {
+    box-shadow: 0px 0px 3px 0px rgba(8, 8, 8, 0.75);
+}
+
+.rightContainer #h4Reset {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#midScreenCheckButton {
+    padding-top: 8px;
+
+    padding-bottom: 8px;
+}
+
+
+.rightContainer #h4Reset,
+#midScreenCheckButton {
+    cursor: pointer;
+}
+
+
+.startScreenContainer {
+    background-color: #c1ac92;
+    width: auto;
+    height: 300px;
+    margin: 20px;
+}
+
+#midScreenIcon,
+#midScreenIcon_no_margin {
+    height: 75px;
+}
+
+#midScreenIcon {
+    margin-left: 1.5rem;
+}
+
+#midScreenInputText {
+    border: none;
+    padding: 10px;
+}
+
+#midScreenCheckButton {
+    font-size: smaller;
+    font-weight: lighter;
+    background-color: #66b935;
+    box-shadow: 0px 0px 5px 0px rgba(83, 155, 41, 0.75);
+}
+
+#midScreenCheckButton:hover {
+    background-color: #65a02e;
+}
+
+
+
+#midScreenCheckButton,
+#midScreenMessageArea {
+    color: white;
+}
+
+
+.startScreenChild {
+    margin-bottom: 10px;
+}
+
+
+.bottomRowContainer {
+    align-self: center;
+    width: 60%;
+    margin-bottom: 25px;
+    margin-top: 10px;
+}
+
+.you_won {
+    background-color: #c9e4c5;
+}
+
+.you_won p,
+.you_lost p {
+    margin: 0 0;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.hide_this {
+    display: none;
+}
+
+.unvisible_this {
+    visibility: hidden;
+}
+
+.secretNumber,
+.largerFont {
+    font-weight: bold;
+    font-size: larger;
+    font-family:Arial, Helvetica, sans-serif
+}
+
+.lostFontStyle {
+    color: #020202;
+}
